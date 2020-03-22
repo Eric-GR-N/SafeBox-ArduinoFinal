@@ -22,8 +22,8 @@ app.set('views',path.join(__dirname,'views'));
 //Here we create the connection variable to the database
 const db = mysql.createConnection({
     host: 'localhost',
-    user: 'Eric',
-    password: 'NoNoVember5-!',
+    user: '',
+    password: '',
     database: 'safebox'
 });
 
