@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    Font-family: "TREBUCHET MS";
+}
+
+h1{
+    text-decoration: none;
+}
+
+
+body{
+    background-image: url(FilipZrnzevic.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+
+
+
+.menu-area a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsla(133, 24%, 29%,0.75);
+    color:white;
+    height: 80px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.menu-area a:hover{
+    background-color: rgba(11, 54, 7,0.8);
+}
+
+.menu-area ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu-area ul li{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-area li:hover .drop li{
+    top: 0;
+    display: block;
+}
+
+.drop li{
+    display: none;
+    position: relative;
+}
+
+.drop{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.buttons{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.buttons a{
+    background-color: hsla(133, 24%, 29%,0.7);
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    padding: 20px 20px;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0 auto;
+    width: 500px;
+    border: 2px solid white;
+}
+
+.buttons a:hover{
+    background-color: rgba(11, 54, 7,0.8);
+    box-shadow: 0 0 20px;
+    transition: 0.1s;
+}
+
+
+#button1{
+    position: relative;
+    top: 360px;
+}
+
+#button2{
+    position: relative;
+    top: 380px;
+}
+
+#button3{
+    position: relative;
+    top: 400px;
+}
+
+.buttons p{
+    position: absolute;
+    left: 47%;
+    color: rgba(11, 54, 7,0.6);
+    font-size: 100px;
+    top: 150px;
+    transition: 1000ms;
+    z-index: 100;
+}
+
+
+
+
+
+
+

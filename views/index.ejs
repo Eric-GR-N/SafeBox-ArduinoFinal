@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="/Public/assets/style.css" type="text/css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safe Box Interface</title>
+</head>
+<body>
+
+<div class="menu-area">
+   <ul>
+     <li><a href="" id="default">Default Value</a>
+       <ul class="drop">
+         <li><a href="" id="defaultValue"><p><% table.forEach(function(user){ %><%= user.DefaultAirValue %><% }); %></p></a></li>
+       </ul>
+    </li>
+
+     <li><a href="" id="current">Current Value</a>
+      <ul class="drop">
+        <li><a href="#" id="currentValue"><p><% table.forEach(function(user){ %><%= user.CurrentAirValue %><% }); %></p></a></li>
+      </ul>
+    </li>
+
+     <li><a href="" id="endurance">Latest Pollution Endurance</a>
+      <ul class="drop">
+        <li><a href="" id="endurance"><p><% table.forEach(function(user){ %><%= user.Endurance %><% }); %> Seconds</p></a></li>
+      </ul>
+    </li>
+
+    <li><a href="" id="outbreak">Latest OutBreak</a>
+      <ul class="drop">
+        <li><a href="" id="outbreak"><p><% table.forEach(function(user){ %><%= user.Outbreak %><% }); %></p></a></li>
+      </ul>
+    </li>
+
+   </ul>
+</div>
+<br>
+<br>
+
+
+<div class="buttons">
+  
+
+<a href="/longest" id="button1" >See the longest pollution endurance</a><p><% table.forEach(function(user){ %><%= user.max_AggregatedEndurance %><% }); %></p>
+<a href="/total" id="button2">See the total pollution endurance</a><p><% table.forEach(function(user){ %><%= user.sum_AggregatedEndurance %><% }); %> </p>
+<a href="/" id="button3">Get the new Values!</a>
+
+</div>
+
+<br>
+</body>
+</html>
+
+
+
+
+
